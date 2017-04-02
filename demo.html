@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>github 傻瓜式入门</title>
+</head>
+<style type="text/css">
+	body{margin:0px;padding:0px;}
+	#container{width:1250px;margin:0px auto;background: #abcdef;padding:20px;}
+	#container .git-item{margin-bottom: 10px;}
+	#container .git-item .git_img{width:100%;text-align: center;margin-top:20px;}
+	#container .git-item .git_img img{width:520px;height:410px;}
+	#container .git-item .git_img button{font-size:14px;}
+	#container .git-item .Destaque{color:red;font-weight: 800;}
+	#container .git-item .Destaque span{color:#000000;font-size:0.8em;font-weight: 100;}
+	#container .end{width:100%;margin-top:10px;}
+	#container .end .end_{color:red;}
+</style>
+<body>
+	<div id="container">
+		<div class="git-item">
+			<h3>github 安装</h3>
+			<span>各个平台安装包下载地址:&nbsp;&nbsp;&nbsp;</span>
+			<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br/>
+			<div class="git_img">
+				<img src="images/1.png" alt=""><br/>
+				<button>下一步</button>
+			</div>
+		</div>
+		<div class="git-item">
+			<h3>创建本地ssh</h3>
+			<p class="Destaque">使用命令：<span>创建本地ssh</span></p>
+			<img src="images/mili.png" alt=""><br/>
+			<img src="images/10.png" alt=""><bt/>
+			<p class="Destaque">
+				进入生成的ssh目录：
+				<span>C:\Documents and Settings\Administrator\.ssh 中, 使用记事本打开 id_rsa.pub 文件, 将该文件中的内容复制</span>
+			</p>
+			<p class="Destaque">
+				记事本内容：<br/>
+				<img src="images/11.png" alt="">
+			</p>
+			<p class="Destaque">
+				进入GitHub网站 : <br/>
+				<img src="images/12.png" alt="">
+				<img src="images/13.png" alt="">
+				<img src="images/14.png" alt="">
+			</p>
+			<p class="Destaque">
+				将上面复制好的ssh-key复制进去 : <br/>
+				<img src="images/15.png" alt="">
+			</p>
+			<p class="Destaque">
+				验证是否配置成功 : <br/>
+				<p>使用命令 :</p>
+				<img src="images/16.png" alt="">
+				<p style="font-size:12px;"> <span style="color:blue;font-size:16px;">成功提示 :</span> 如果出现Hi 745514885 You've successfully authenticated, but GitHub does not provide shell access. 就说明配置成功, 可以连接上GitHub;</p>
+			</p>
+			<h2>配置本地用户和邮箱</h2>
+			<p class="Destaque">
+				用户名邮箱作用 :<br/><span>我们需要设置一个用户名 和 邮箱, 这是用来上传本地仓库到GitHub中, 在GitHub中显示代码上传者;</span><br/><br/>
+				使用命令：<br/><br/>
+				<img src="images/17.png" alt="">
+			</p>
+			<p class="Destaque">
+				创建远程仓库<br/>
+				<img src="images/18.png" alt=""><br/>
+				<img src="images/19.png" alt="">
+			</p>
+		</div>
+		<div class="end">
+			<p>上面的步骤完成之后就可以开始上传项目了........</p>
+			<p>步骤如下：</p>
+			<p class="end_">
+				1:先打开项目文件夹<br>
+			</p>
+
+		</div>
+	</div>
+<script type="text/javascript">
+var img_content = document.getElementsByClassName("git_img")[0];
+var i=1;
+function f(){
+	if(i==9){
+		i=1;
+	}else{
+		i++;
+	}
+	var img = img_content.getElementsByTagName("img")[0];
+	img.src="images/"+i+".png";
+}
+img_content.getElementsByTagName("button")[0].addEventListener("click",f)
+</script>
+</body>
+</html>
