@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Github 教程</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style type="text/css">
+	body{background: #F5F5F5;}
+	.container .navbar{box-shadow:2px 2px 2px #ddd;}
+	.container{background: white;}
+	.container .row{padding:0px 10px;}
+	.container .row .text-danger{color:red;font-weight: 600;border:0px;overflow: hidden;}
+	.container .row p{border:1px solid #ddd;padding:15px 10px;border-radius:5px;overflow: scroll;}
+	.container .row .text-danger a{font-size: 13px;font-weight: 100;}
+	.container .row .text-danger span{color:#555555;font-weight: 100;}
+</style>
+<body>
+<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="javascript:void(0)" class="navbar-brand">Github入门教程</a>
+			</div>
+		</div>
+	</nav>
+	<div class="row" style="margin-top:50px;">
+		<h3 class="page-heder">Github的安装</h3>
+		<p class="text-danger">各个平台安装包下载地址: 
+			<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+		</p>
+	</div>
+	<div class="row">
+		<h3 class="page-heder">安装Git客户端</h3>
+		<p class="text-danger">欢迎界面<span>：直接下一步</span></p>
+		<p><img src="images/1.png" alt=""></p>
+		<p class="text-danger">协议<span>：必须接受</span></p>
+		<p><img src="images/2.png" alt=""></p>
+		<p class="text-danger">安装位置<span>：预留100M空间, 自定义安装位置</span></p>
+		<p><img src="images/3.png" alt=""></p>
+		<p class="text-danger">选择安装组件<span>：也可以默认选择</span></p>
+		<p><img src="images/4.png" alt=""></p>
+		<p class="text-danger">开始菜单快捷方式目录<span>：设置开始菜单中快捷方式的目录名称, 也可以选择不再开始菜单中创建快捷方式</span></p>
+		<p><img src="images/5.png" alt=""></p>
+		<p class="text-danger">设置环境变量<span>：选择使用什么样的命令行工具, 一般情况下我们默认使用Git Bash即可, 默认选择</span></p>
+		<p><img src="images/6.png" alt=""></p>
+		<p class="text-danger">选择换行格式</p>
+		<p><img src="images/7.png" alt=""></p>
+		<p>开始安装</p>
+		<p><img src="images/8.png" alt=""></p>
+		<p>安装结束</p>
+		<p><img src="images/9.png" alt=""></p>
+	</div>
+	<div class="row">
+		<h3 class="page-heder">创建本地ssh</h3>
+		<p class="text-danger">使用命令<span>：创建本地ssh</span></p>
+		<p><img src="images/mili.png" alt=""></p>
+		<p class="text-danger">GitHub邮箱<span>：该命令后面的邮箱就是GitHub的注册邮箱</span></p>
+		<p class="text-danger">路径选择
+			<span>：使用该命令之后, 会出现提示选择ssh-key生成路径, 这里直接点回车默认即可, 生成的ssh-key在默认路径中</span>
+		</p>
+		<p><img src="images/10.png" alt=""></p>
+	</div>
+	<div class="row">
+		<h3 class="page-heder">将ssh配置到GitHub中</h3>
+		<p class="text-danger">进入生成的ssh目录
+			<span>：C:\Documents and Settings\Administrator\.ssh 中, 使用记事本打开 id_rsa.pub 文件, 将该文件中的内容复制</span>
+		</p>
+		<p class="text-danger">id_rsa.pub 文件内容</p>
+		<p><img src="images/11.png" alt=""></p>
+		<p class="text-danger">进入GitHub网站<span>：登录GitHub, 选择 Setting 用户设置</span></p>
+		<p><img src="images/12.png" alt=""></p>
+		<p class="text-danger">选择 SSH and GPG keys</p>
+		<p><img src="images/13.png" alt=""></p>
+		<p class="text-danger">点击右侧的  New SSH key </p>
+		<p><img src="images/14.png" alt=""></p>
+		<p class="text-danger">将上面复制好的ssh-key复制进去</p>
+		<p><img src="images/15.png" alt=""></p>
+		<p class="text-danger">验证是否成功<span>：使用命令</span></p>
+		<p><img src="images/16.png" alt=""></p>
+		<p class="text-danger">如果出现 
+			<span>
+			Hi 745514885 You've successfully authenticated, but GitHub does not provide shell access. 就说明配置成功, 可以连接上GitHub
+			</span>
+		</p>
+	</div>
+	<div class="row">
+		<h3 class="page-heder">配置本地用户和邮箱</h3>
+		<p class="text-danger">用户名邮箱作用
+			<span>：我们需要设置一个用户名 和 邮箱, 这是用来上传本地仓库到GitHub中, 在GitHub中显示代码上传者</span>
+		</p>
+		<p class="text-danger">使用命令</p>
+		<p><img src="images/17.png" alt=""></p>
+	</div>
+	<div class="row">
+		<h3 class="page-heder">创建远程仓库</h3>
+		<p><img src="images/18.png" alt=""></p>
+		<p><img src="images/19.png" alt=""></p>
+	</div>
+	<div class="row">
+		<h3 class="text-danger">完成以上操作就可以上传项目到Git了</h3>
+		<h4>步骤如下：</h4>
+		<p class="text-danger">1:先打开项目文件夹,右键打开git Bash Here</p>
+		<p class="text-danger">2:输入命令。切换到文件夹右键显示隐藏文件看看是否有.git的文件。有就说明成功了</p>
+		<p>
+			<img src="images/22.png" alt="">
+			<img src="images/23.png" alt="">
+		</p>
+	</div>
+</div>
+ <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
